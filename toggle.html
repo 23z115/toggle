@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title
+        {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+            font-size: xx-large;
+        }
+        body 
+        {
+         padding: 25px;
+         background-color: white;
+         color: black;
+        font-size: 25px;
+        }
+        .dark-mode 
+        {
+            background-color: black;
+             color: white;
+        }
+        .btn
+        {
+            border-radius: 30px;
+            height:50px;
+            width:110px;
+            background-color: beige;
+            color:brown ;
+            font-style: oblique;
+            
+        }
+    </style>
+    <h1 class="title">Welcome to my webpage that toggle dark/light mode</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia voluptatibus nihil incidunt tenetur, repudiandae quas minus alias odit a nulla quae animi omnis repellat magni, ea consequuntur impedit itaque maxime.</p>
+    <h3>click the below button to shift modes</h3>
+    <!-- <button class="btn">Change Mode</button> -->
+</head>
+<button class="btn" onclick="myFunction()">Change Mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+    
+</body>
+</html>
